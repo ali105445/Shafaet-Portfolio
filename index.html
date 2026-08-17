@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KM. SHAFAET ALI | Student Portfolio</title>
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navMenu" data-bs-offset="90" tabindex="0">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#hero">
+        <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1 align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-2">
+            <button id="themeToggle" class="btn btn-outline-secondary rounded-circle theme-btn" onclick="toggleTheme()"
+              title="Toggle Theme">
+              <i class="bi bi-sun-fill" id="themeIcon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="d-flex align-items-center min-vh-100 py-5">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-4 text-center">
+          <img id="profilePic" src="Photo from Tayasuk Imam.jpg" alt="Tayasuk Imam" class="profile-pic" />
+        </div>
+        <div class="col-lg-8">
+          <p class="hero-greeting fw-semibold mb-1">Hello, I am</p>
+          <h1 class="hero-name display-4 fw-bold">KM. SHAFAET <span>ALI</span></h1>
+          <p class="hero-subtitle text-secondary fs-5 mb-3">CSE Student - 3rd Semester - Premier University Chittagong
+          </p>
+          <p class="hero-desc text-secondary mb-4">
+            A passionate Computer Science & Engineering student exploring the world of programming — from low-level C to
+            web technologies. Always learning, always building.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contact" class="btn btn-accent px-4 py-2">Get in Touch</a>
+            <a href="#projects" class="btn btn-outline-accent px-4 py-2">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-5 bg-body-tertiary">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="section-underline"></div>
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <p class="text-secondary mb-3">
+            I am Shafaet, a 3rd-semester Computer Science & Engineering student at Premier University Chittagong,
+            Bangladesh. I am deeply interested in programming, problem-solving, and building things with code.
+          </p>
+          <p class="text-secondary">
+            My journey started with C and C++, which gave me a strong foundation in logic and memory management. I have
+            since expanded into web development with HTML, CSS, and Java as a beginner and I enjoy turning ideas into
+            working programs.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="card p-4 border shadow-sm">
+            <div class="info-row"><i class="bi bi-person-fill fs-5"></i>
+              <div><small class="text-secondary">Full Name</small><br /><strong>K.M. Shafaet Ali</strong></div>
+            </div>
+            <div class="info-row"><i class="bi bi-mortarboard-fill fs-5"></i>
+              <div><small class="text-secondary">University</small><br /><strong>Premier University Chittagong,
+                  Chittagong</strong></div>
+            </div>
+            <div class="info-row"><i class="bi bi-journal-bookmark-fill fs-5"></i>
+              <div><small class="text-secondary">Department & Semester</small><br /><strong>CSE — 3rd Semester</strong>
+              </div>
+            </div>
+            <div class="info-row"><i class="bi bi-geo-alt-fill fs-5"></i>
+              <div><small class="text-secondary">Location</small><br /><strong>Chittagong, Bangladesh</strong></div>
+            </div>
+            <div class="info-row"><i class="bi bi-translate fs-5"></i>
+              <div><small class="text-secondary">Languages</small><br /><strong>Bengali (Native), English
+                  (Intermediate)</strong></div>
+            </div>
+            <div class="info-row mb-0"><i class="bi bi-lightning-charge-fill fs-5"></i>
+              <div><small class="text-secondary">Interest</small><br /><strong>Programming, Web Dev, Problem
+                  Solving</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="section-underline"></div>
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <span><i class="bi bi-filetype-c me-2"></i>C Language</span><span>95%</span>
+            </div>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar bg-accent" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <span><i class="bi bi-filetype-cpp me-2"></i>C++</span><span>95%</span>
+            </div>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar bg-accent" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <span><i class="bi bi-filetype-html me-2"></i>HTML</span><span>100%</span>
+            </div>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar bg-accent" style="width: 100%"></div>
+            </div>
+          </div>
+       
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <span><i class="bi bi-filetype-css me-2"></i>CSS</span><span>100%</span>
+            </div>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar bg-accent" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <span><i class="bi bi-filetype-js me-2"></i>Java script</span><span>85%</span>
+            </div>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar bg-accent" style="width: 85%"></div>
+            </div>
+          </div>
+           <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <span><i class="bi bi-filetype-java me-2"></i>Java</span><span>80%</span>
+            </div>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar bg-accent" style="width: 80%"></div>
+            </div>
+          </div>
+          
+           <div class="mb-4">
+            <div class="d-flex justify-content-between mb-1">
+              <span><i class="bi bi-filetype-phy me-2"></i>Phython</span><span>70%</span>
+            </div>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar bg-accent" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <h5 class="mt-4 mb-3 text-secondary text-uppercase fs-6 tracking-wide">Tools & Technologies</h5>
+      <div class="d-flex gap-2">
+        <span class="badge badge-accent"><i class="bi bi-terminal"></i> VS Code</span>
+        <span class="badge badge-accent"><i class="bi bi-windows"></i> Windows</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="py-5 bg-body-tertiary">
+    <div class="container">
+      <h2 class="section-title">My <span>Education</span></h2>
+      <div class="section-underline"></div>
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="card edu-card mb-3 p-4 shadow-sm">
+            <p class="fw-bold fs-5 mb-1">B.Sc. in Computer Science & Engineering</p>
+            <p class="text-accent fw-semibold mb-1">Premier University Chittagong, Chittagong</p>
+            <p class="text-secondary small mb-2"><i class="bi bi-calendar3"></i> 2025 – Present &nbsp;|&nbsp; 3rd
+              Semester (Ongoing)</p>
+            <p class="text-secondary mb-0">Studying core CS subjects including PF, DEPT, DMNT, DSA, OOP, EDC, CPL.</p>
+          </div>
+          <div class="card edu-card mb-3 p-4 shadow-sm">
+            <p class="fw-bold fs-5 mb-1">Higher Secondary Certificate (HSC)</p>
+            <p class="text-accent fw-semibold mb-1">Nazirhat College</p>
+            <p class="text-secondary small mb-2"><i class="bi bi-calendar3"></i> 2021 – 2023 | Science Group</p>
+            <p class="text-secondary mb-0">Completed HSC with Science group, building a strong foundation in
+              Mathematics, Physics, and Chemistry.</p>
+          </div>
+          <div class="card edu-card p-4 shadow-sm">
+            <p class="fw-bold fs-5 mb-1">Secondary School Certificate (SSC)</p>
+            <p class="text-accent fw-semibold mb-1">Nazirhat Collegite High School</p>
+            <p class="text-secondary small mb-2"><i class="bi bi-calendar3"></i> 2020 – 2022 &nbsp;|&nbsp; Science Group
+            </p>
+            <p class="text-secondary mb-0">With excellent results in Mathematics and General Science, I secured a GPA 5 in my SSC.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card p-4 shadow-sm h-100">
+            <h5 class="text-accent mb-3">Ongoing Academic Snapshot</h5>
+            <div class="info-row"><i class="bi bi-award-fill"></i>
+              <div><small class="text-secondary">Current CGPA</small><br /><strong>3.96</strong></div>
+            </div>
+            <div class="info-row"><i class="bi bi-calendar-check"></i>
+              <div><small class="text-secondary">Semester</small><br /><strong>3rd (Running)</strong></div>
+            </div>
+            <div class="info-row"><i class="bi bi-book-fill"></i>
+              <div><small class="text-secondary">Courses This Semester</small><br /><strong>DEPT, OOP, CGVA, BS, IP, DEPTL, OOPL, NM</strong></div>
+            </div>
+            <div class="info-row mb-0"><i class="bi bi-trophy-fill"></i>
+              <div><small class="text-secondary">Goal</small><br /><strong>To be a successfull businessman. Sound may wrong as a CSE student but that's my last destination</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="section-underline"></div>
+      <div class="row gy-4">
+        
+        <div class="col-md-4">
+              <a class="text-u" href="login.html" target="_blank">
+          <div class="card p-4 shadow-sm h-100 project-card">
+            <div class="project-icon mb-3"><i class="bi bi-mortarboard"></i></div>
+            <h5 class="fw-bold">Develop a simple login page for my university</h5>
+            <p class="text-secondary">I built a simple student login page using Html and css. That was my 1st project</p>
+            <div class="mt-auto">
+              <span class="badge badge-accent">HTML</span> <span class="badge badge-accent">CSS</span>
+              <span class="badge badge-accent">Bootstrap</span> <span class="badge badge-accent">JavaScript</span>
+            </div>
+          </div>
+              </a>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm h-100 project-card">
+            <div class="project-icon mb-3"><i class="bi bi-calculator"></i></div>
+            <h5 class="fw-bold">Student Grade Calculator</h5>
+            <p class="text-secondary">A C program that takes student marks as input and calculates the final grade, GPA,
+              and result (Pass/Fail) based on a university grading system.</p>
+            <div class="mt-auto"><span class="badge badge-accent">C Language</span> <span
+                class="badge badge-accent">Logic</span></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm h-100 project-card">
+            <div class="project-icon mb-3"><i class="bi bi-globe"></i></div>
+            <h5 class="fw-bold">Personal Portfolio Website</h5>
+            <p class="text-secondary">This responsive portfolio website built with HTML, CSS, Bootstrap 5, and
+              JavaScript to showcase skills, education, and projects.</p>
+            <div class="mt-auto">
+              <span class="badge badge-accent">HTML</span> <span class="badge badge-accent">CSS</span>
+              <span class="badge badge-accent">Bootstrap</span> <span class="badge badge-accent">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-5 bg-body-tertiary">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="section-underline"></div>
+      <div class="row gy-4">
+        <div class="col-lg-5">
+          <p class="text-secondary mb-4">Feel free to reach out for collaborations, questions, or just to say hi!</p>
+          <div class="info-row"><i class="bi bi-envelope-fill fs-5"></i>
+            <div><small class="text-secondary">Email</small><br /><span>kazimohammadshafaetali@gmail.com</span></div>
+          </div>
+          <div class="info-row"><i class="bi bi-telephone-fill fs-5"></i>
+            <div><small class="text-secondary">Phone</small><br /><span>+880 1601913199</span></div>
+          </div>
+          <div class="info-row"><i class="bi bi-geo-alt-fill fs-5"></i>
+            <div><small class="text-secondary">Location</small><br /><span>Nazirhat, Chittagong, Bangladesh</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card p-4 shadow-sm">
+            <form onsubmit="handleFormSubmit(event)">
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label class="form-label text-secondary small">Your Name</label>
+                  <input type="text" id="senderName" class="form-control" placeholder="Name...." required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-secondary small">Email Address</label>
+                  <input type="email" id="senderEmail" class="form-control" placeholder="demo@email.com" required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-secondary small">Subject</label>
+                  <input type="text" id="msgSubject" class="form-control" placeholder="Project collaboration..." />
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-secondary small">Message</label>
+                  <textarea id="msgBody" class="form-control" rows="4" placeholder="Write your message here..."
+                    required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-accent px-4 py-2"><i class="bi bi-send me-2"></i>Send
+                    Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 text-center text-secondary border-top">
+    <div class="container">
+      <div class="mb-3">
+       
+        <a href="https://www.facebook.com/k.m.shafaet.ali" target="_blank"
+          class="btn btn-outline-secondary btn-sm rounded-circle mx-1"><i class="bi bi-facebook"></i></a>
+        <a href="mailto:tayasukimam@gmail.com" class="btn btn-outline-secondary btn-sm rounded-circle mx-1"><i
+            class="bi bi-envelope"></i></a>
+      </div>
+      <p class="mb-1">Designed & built by <span class="text-accent fw-bold">KM. Shafaet Ali</span> &nbsp;&nbsp;</p>
+      <p class="small text-secondary mb-0">© 2026 Km. Shafaet Ali. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

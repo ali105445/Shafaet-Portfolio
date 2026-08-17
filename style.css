@@ -1,0 +1,186 @@
+:root {
+  --accent: #00d4ff;
+  --font-display: 'Rajdhani', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+[data-bs-theme="light"] {
+  --accent: #0077cc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-brand {
+  font-family: var(--font-display);
+}
+
+.text-u{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.text-accent,
+.section-title span,
+.hero-name span {
+  color: var(--accent) !important;
+}
+
+.bg-accent,
+.btn-accent {
+  background-color: var(--accent) !important;
+  color: #0d1b2a !important;
+  font-weight: 700;
+}
+
+.btn-accent:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+}
+
+.btn-outline-accent {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.btn-outline-accent:hover {
+  background-color: var(--accent);
+  color: #0d1b2a;
+}
+
+/* Section Title Underline */
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.section-underline {
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin-bottom: 2.5rem;
+}
+
+/* Navbar */
+.navbar {
+  backdrop-filter: blur(10px);
+}
+
+.typewriter-cursor {
+  color: var(--accent);
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 10%;
+  border: 3px solid var(--accent);
+  box-shadow:
+    0 0 0 4px rgba(0, 212, 255, 0.15),
+    0 0 20px rgba(0, 212, 255, 0.5),
+    0 0 45px rgba(0, 212, 255, 0.35),
+    0 0 80px rgba(0, 212, 255, 0.2);
+  animation: profileGlow 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.04);
+}
+
+@keyframes profileGlow {
+
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 4px rgba(0, 212, 255, 0.15),
+      0 0 20px rgba(0, 212, 255, 0.5),
+      0 0 45px rgba(0, 212, 255, 0.35),
+      0 0 80px rgba(0, 212, 255, 0.2);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 6px rgba(0, 212, 255, 0.25),
+      0 0 35px rgba(0, 212, 255, 0.75),
+      0 0 70px rgba(0, 212, 255, 0.55),
+      0 0 110px rgba(0, 212, 255, 0.3);
+  }
+}
+
+/* Info Rows & Education Timeline */
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.info-row i {
+  color: var(--accent);
+  margin-top: 3px;
+}
+
+.edu-card {
+  border-left: 4px solid var(--accent) !important;
+}
+
+/* Project Cards */
+.project-card {
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent) !important;
+}
+
+.project-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 212, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+/* Badges */
+.badge-accent {
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  font-weight: 500;
+  padding: 0.4em 0.7em;
+}
